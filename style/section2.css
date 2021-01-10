@@ -1,0 +1,147 @@
+
+/*     SECTION 2 */
+
+/* Titre et barre de recherche */ 
+
+.top {
+    margin-top: 50px;
+}
+
+#logo {
+    margin-top: 30px;
+}
+
+.item3 {
+    color: var(--bleuClair);
+}
+
+/* Barre de naviguation */ 
+
+@media screen and (min-width: 1000px) {
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav .container {
+padding-top: 45px;
+
+}
+
+#nav a {
+    padding: 10px;
+    display: inline;
+}
+
+#nav .item1 {
+    padding-top: 42px;
+    border-top: 3px solid var(--bleuClair);
+            }
+        }
+
+@media screen and (max-width: 1000px) {
+ 
+#nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav .container {
+    padding-top: 10px;
+}
+
+/* GESTION CONTENU MENU */ 
+#nav .select {
+    width: 50%;
+}
+
+#nav .container2 {
+    display: flex;
+    text-align: center;
+}
+
+#nav .item1 {
+ width: 50%;
+}
+
+
+#nav .item2 {
+    width: 50%;}
+
+
+#nav .item3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px;
+}
+
+#nav .item1 {
+    border-bottom: 3px solid var(--bleuClair);
+            }
+}
+
+
+
+/* Section filtre */ 
+
+#filtre {
+    margin-top: 25px;
+}
+#filtreBox h3 {
+    padding: 10px;
+    padding-right: 20px;
+    margin: 0px
+}
+
+#filtreBox .contenu {
+    padding-top: 11px;
+}
+
+#filtreBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filtresDisponibles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.filtresDisponibles div {
+    display:flex;
+    align-items:center;
+    border: 2px solid var(--grisClair);
+    border-radius: 90px;
+    margin: 7px;
+}
+
+.filtresDisponibles i {
+    padding : 12px;
+    background-color:  var(--bleuPale);
+    border-radius: 90px;
+    font-size: 15px;
+    margin-right: 7px;
+    color: var(--bleuClair);
+}
+
+.loupe {
+    background: url(images/icon/loupe.svg) no-repeat 0 0;
+    width:24px;
+}
+
+.filtresDisponibles div:hover {
+    background-color: var(--bleuPale);
+    transition: background-color 200ms ;
+}
+
+/* AUTRE */
+
+#nav a {
+    padding: 10px;
+  }

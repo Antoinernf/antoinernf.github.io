@@ -1,0 +1,128 @@
+
+/* Base à tout le site */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+a{
+    color: inherit;
+    text-decoration:none; 
+}
+
+#nav a:hover {
+    color: var(--bleuClair);
+}
+
+#nav a:focus
+{
+    color: #0043a7;
+}
+
+.etoile img {
+    display: flex;
+    flex-direction: row;
+    display: inline;
+    width: 10px;
+ }
+ .annonce:hover {
+     opacity: 0.8;
+     transform:scale(1.02);
+     transition: opacity 190ms, transform 190ms ;
+ }
+
+ .annonce {
+    padding: 2px;
+    margin: 15px;
+    background-color: var(--blanc);
+    border: 3px solid var(--blanc);
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.10);
+ }
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.etoile {
+    margin: 5px;
+}
+
+ /* Base du site : partie texte */ 
+p {
+    font-size: 0.8em;
+}
+
+h4 {
+    font-size: 0.7em;
+}
+
+h3 {
+    font-weight: bold; 
+    font-size: 0.9em;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 0.9em;
+}
+/* COULEURS */ 
+
+html {
+    --bleuPale: #e5f5ff;
+    --bleuClair: #0065FC;
+    --bleuFonce: #0054d3;
+    --grisClair: #F2F2F2;
+    --grisFonce: #e7e7e7;
+    --blanc: white;
+}
+
+
+.etoile i {
+    color: var(--bleuClair);
+    font-size: 10px;
+}
+
+i.fas.fa-star.gris {
+    color: var(--grisFonce)!important;
+}
+
+
+/* CONTENU CENTRER ORDINATEUR */
+
+@media all and (min-width: 1400px) {
+
+header, .top, #filtre, #activites h2 {
+    display: grid;
+    grid-auto-columns: 1345px;
+    justify-content: center;
+}
+}
+
+@media all and (max-width: 1400px) {
+
+    .wrappe {
+        margin: 0px 30px;
+    }
+
+    }
+

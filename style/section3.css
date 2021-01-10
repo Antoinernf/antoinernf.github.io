@@ -1,0 +1,150 @@
+
+
+  /* Section 3 : Hébergement de recherche */ 
+
+  /* CONTENU */ 
+h2 {
+      margin: 5px;
+      padding: 0px;
+  }
+
+  /* texte de résultat de logement */ 
+.resultatLogement i {
+    padding: 10px;
+    border: 1px solid var(--grisClair);
+    border-radius: 180px;
+    font-size: 10px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    color: var(--bleuClair);
+}
+
+/* ANNONCE COMMUN */ 
+#sectionDesVilles h4, #sectionDesVilles h3 {
+    margin: 4px;
+}
+
+#sectionDesVilles h3
+ {
+    margin-top: 8px;
+}
+
+#sectionDesVilles .plus {
+    margin: 18px;
+}
+
+
+  /* ORDINATEUR */ 
+
+  @media screen and (min-width: 1400px) {
+
+
+.resultatLogement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+/* Annonces */ 
+
+#sectionDesVilles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+
+
+#villeALaUne .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#villeALaUne {
+    padding: 20px;
+    background-color: var(--grisClair);
+    border-radius: 15px;
+    width: 878px;
+    height: 550px;
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#villeALaUne .annonce {
+width: 245px;
+height: 200px;
+}
+
+#villeALaUne .image {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+  }
+
+  /* PARTIE MOBILE */ 
+
+  @media screen and (max-width: 1400px) {
+
+.resultatLogement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+/* Annonces */ 
+
+#sectionDesVilles {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+
+
+#villeALaUne .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#villeALaUne {
+    border-radius: 15px;
+    min-height: 624px;
+    display: block;
+}
+
+#villeALaUne .annonce {
+max-width: 400px;
+height: 100%;
+}
+
+#villeALaUne .image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;}
+
+#villeALaUne {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+}

@@ -1,0 +1,86 @@
+/* SECTION 1 */ 
+
+/* Barre de recherche */ 
+
+#containerAll{
+  display:flex;
+  align-items:center;
+}
+
+#containerPhone{
+  display:flex;
+  align-items:center;
+}
+
+#containerPhone{
+  display:none;
+}
+
+  /* RESPONSIVE */ 
+
+@media all and (max-width: 1000px) {
+  #containerAll{
+    display: none;
+  }
+  #containerPhone{
+    display: flex;
+  }
+
+  .villeInput {
+    width: 100%;
+  }
+  }
+
+/* CONTENU */ 
+
+.iconLocalisation {
+    padding: 14px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid var(--grisClair);
+    height: 20px;
+    margin: 0px;
+    width:20px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid var(--grisClair);
+    padding: 16px;
+    background-color: var(--grisClair);
+   }
+  
+.villeInput{
+      border: 1px solid var(--grisClair);
+      border-color: var(--grisClair);
+      font-weight: bold; 
+      font-size: 16px;
+      padding: 16px;
+  }
+  
+.submitRecherche {
+      background: var(--bleuClair);
+      color: #fff;
+      font-size: 16px;
+      margin: 0 auto;
+      border-radius: 0px 15px 15px 0px;
+      border: 1px solid var(--bleuClair);
+      padding: 16px;
+      margin:0px;
+  }
+
+  .submitRecherchePhone {
+    background: var(--bleuClair);
+    color: #fff;
+    font-size: 16px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 1px solid var(--bleuClair);
+    padding: 16px;
+    margin:-15px;
+    height: 19px;
+}
+
+.submitRecherche:hover, #submitRecherchePhone:hover {
+  background: var(--bleuFonce);
+}
+
+.iconLocalisation:hover {
+  background-color: var(--grisFonce);
+}

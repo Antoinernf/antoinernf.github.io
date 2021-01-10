@@ -1,0 +1,92 @@
+
+/* Section 4 : hébergement populaire */ 
+
+#villePopulaire .containerTop {
+    display: flex;
+    justify-content: space-between;
+}
+    
+    /* ORDINATEUR */ 
+@media screen and (min-width: 1400px) {
+
+    #villePopulaire {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 550px;
+        padding: 20px;
+        background-color: var(--grisClair);
+        border-radius: 15px;
+        display: block;
+        width: 350px;
+    }
+
+    #villePopulaire .annonce {
+        min-width: auto;
+        height: 145px;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 1400px) {
+
+    #villePopulaire .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    #villePopulaire {
+        padding: 20px;
+        background-color: var(--grisClair);
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    #villePopulaire .annonce {
+        min-width: 400px;
+        height: 145px;
+    }
+    
+}
+
+/* CONTENU */ 
+
+#villePopulaire .chart{
+    margin: 6px;
+    padding: 0px;
+    font-size: 24px;
+}
+
+#villePopulaire .icon {
+    width: 20px;
+}
+
+
+/* FORMAT ANNONCE */
+
+#villePopulaire .container .annonce {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#villePopulaire h3, #villePopulaire h4 , #villePopulaire .etoile {
+    margin: 10px;
+}
+
+#villePopulaire .image  {
+    max-width: 130px;
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+}
+
+img.imgHotel {
+    height: 100%;
+    min-width: 130px;
+}
